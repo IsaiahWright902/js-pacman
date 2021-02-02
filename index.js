@@ -1,13 +1,16 @@
 import {LEVEL, OBJECT_TYPE} from './setup';
 
+import GameBoard from './GameBoard';
+
 //Dom Element
 const gameGrid = document.querySelector('#game');
 const scoreTable = document.querySelector('#score');
-const scoreTable = document.querySelector('#start-button');
+const startButton = document.querySelector('#start-button');
 
 //Game constants
 const POWER_PILL_TIME  = 10000;
 const GLOBAL_SPEED = 80; 
+const gameBoard = GameBoard.createGameBoard(gameGrid, LEVEL);
 
 //Inital Setup
 let score =0;
@@ -29,5 +32,5 @@ function gameLoop(pacman, ghosts){
 }
 
 function startGame(){
-    
+
 }
