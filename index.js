@@ -143,3 +143,5 @@ timer = setInterval(() => gameLoop(pacman, ghosts), GLOBAL_SPEED);
 
 //Initialize game
 startButton.addEventListener('click', startGame);
+
+//needed a commit
